@@ -1,0 +1,13 @@
+Disposable fixture: /var/folders/53/39n56ymd31x183vdq3svh5700000gn/T//bcm-wp.K5XbDM
+PASS: missing params: ten published posts
+PASS: page 2 and real found-row total
+PASS: page 2 has correct dated posts, not first page
+PASS: twenty literal marker replacements
+PASS: literal matching and real wpautop content formatting
+PASS: ad divs not nested in wpautop paragraphs
+PASS: unique rendered ad identifiers
+PASS: real wp_reset_postdata restores main query post
+PASS: no search results
+PASS: last page contains one fixture
+WordPress 7.1.3; PHP 8.4.1; SQLite integration; 10 checks passed.
+Fixture retained for inspection at /var/folders/53/39n56ymd31x183vdq3svh5700000gn/T//bcm-wp.K5XbDM (safe to remove when finished).

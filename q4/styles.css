@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 2rem 1rem; color: #182331; background: #fff; font-family: system-ui, sans-serif; }
+header, .layout { max-width: 60rem; margin-inline: auto; }
+h1 { margin: 0 0 1.5rem; font-size: 1.35rem; }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-areas: "a" "d" "b" "c" "g"; gap: 1px; border: 1px solid #8793a2; background: #8793a2; }
+.panel { min-width: 0; min-height: 7rem; padding: 1.5rem; display: grid; place-items: center; background: #fff; }
+.panel h2 { margin: 0; font-size: 1.5rem; font-weight: 500; overflow-wrap: anywhere; text-align: center; }
+.panel-a { grid-area: a; }
+.panel-b { grid-area: b; }
+.panel-c { grid-area: c; }
+.panel-d { grid-area: d; }
+.panel-e { grid-area: e; }
+.panel-f { grid-area: f; }
+.panel-g { grid-area: g; }
+.panel-h { grid-area: h; }
+.panel-e, .panel-f, .panel-h { display: none; }
+@media (min-width: 48rem) {
+  .layout { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-areas: "a a b" "c d e" "f g h"; }
+  .panel-e, .panel-f, .panel-h { display: grid; }
+}

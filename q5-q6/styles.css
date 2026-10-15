@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 2rem 1rem; font: 1rem/1.65 system-ui, sans-serif; color: #182331; background: #fff; }
+main { max-width: 48rem; margin-inline: auto; }
+h1 { line-height: 1.2; }
+p { overflow-wrap: anywhere; }
+img { display: block; max-width: 100%; height: auto; margin-block: 1rem; }
+hr { border: 0; border-top: 1px solid #8793a2; margin-block: 1.5rem; }
+#controls { display: flex; flex-wrap: wrap; gap: .75rem; }
+button { padding: .65rem 1rem; border: 1px solid #334155; border-radius: .25rem; background: #eef2f7; color: #182331; font: inherit; cursor: pointer; }
+button:focus-visible, a:focus-visible { outline: 3px solid #0763ca; outline-offset: 3px; }
+output { display: block; margin-top: .75rem; }
+[hidden] { display: none !important; }

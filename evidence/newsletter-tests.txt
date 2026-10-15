@@ -1,0 +1,60 @@
+TAP version 13
+# Subtest: accepted request whose response times out is retried without duplication
+ok 1 - accepted request whose response times out is retried without duplication
+  ---
+  duration_ms: 1.039708
+  ...
+# Subtest: 429 honours Retry-After and does not send before due time
+ok 2 - 429 honours Retry-After and does not send before due time
+  ---
+  duration_ms: 0.105
+  ...
+# Subtest: Retry-After HTTP date is supported
+ok 3 - Retry-After HTTP date is supported
+  ---
+  duration_ms: 0.957458
+  ...
+# Subtest: invalid local email never reaches provider
+ok 4 - invalid local email never reaches provider
+  ---
+  duration_ms: 0.07825
+  ...
+# Subtest: provider validation is terminal
+ok 5 - provider validation is terminal
+  ---
+  duration_ms: 0.083416
+  ...
+# Subtest: repeated failures retained for review and capped backoff
+ok 6 - repeated failures retained for review and capped backoff
+  ---
+  duration_ms: 0.424666
+  ...
+# Subtest: failure to persist before sending makes no request
+ok 7 - failure to persist before sending makes no request
+  ---
+  duration_ms: 0.463666
+  ...
+# Subtest: crash saving success is safe on restart with persisted pending job
+ok 8 - crash saving success is safe on restart with persisted pending job
+  ---
+  duration_ms: 0.209917
+  ...
+# Subtest: unexpected authentication failure is retained for review
+ok 9 - unexpected authentication failure is retained for review
+  ---
+  duration_ms: 0.749875
+  ...
+# Subtest: sent job does not get sent again
+ok 10 - sent job does not get sent again
+  ---
+  duration_ms: 0.200334
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 51.455625

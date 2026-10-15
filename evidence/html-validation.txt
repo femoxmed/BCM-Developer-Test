@@ -1,0 +1,6 @@
+
+> bcm-developer-assessment@1.0.0 validate
+> node scripts/validate.cjs
+
+PASS: q4/index.html — 0 errors, 0 warnings
+PASS: q5-q6/index.html — 0 errors, 0 warnings
